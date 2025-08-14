@@ -1,0 +1,34 @@
+2264. Largest 3-Same-Digit Number in String
+You are given a string num representing a large integer. An integer is good if it meets the following conditions:
+It is a substring of num with length 3.
+It consists of only one unique digit.
+Return the maximum good integer as a string or an empty string "" if no such integer exists.
+
+Example 1:
+Input: num = "6777133339"
+Output: "777"
+
+Example 2:
+Input: num = "2300019"
+Output: "000"
+
+Example 3:
+Input: num = "42352338"
+Output: ""
+
+Approach used: Sliding Window + lexicographical comparison 
+
+class Solution {
+    public String largestGoodInteger(String num) {
+        String ans = "";
+        for (int i = 2; i < num.length(); i++) {
+            if (num.charAt(i) == num.charAt(i - 1) && num.charAt(i - 1) == num.charAt(i - 2)) {
+                String current = num.substring(i - 2, i + 1);
+                if (current.compareTo(ans) > 0) {
+                    ans = current;
+                }
+            }
+        }
+        return ans;
+    }
+}
