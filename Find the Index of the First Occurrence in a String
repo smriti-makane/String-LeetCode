@@ -3,7 +3,7 @@ Given two strings needle and haystack, return the index of the first occurrence 
 
 Example 1:
 Input: haystack = "sadbutsad", needle = "sad"
-Output: 0
+Output: 0 
 
 Example 2:
 Input: haystack = "leetcode", needle = "leeto"
