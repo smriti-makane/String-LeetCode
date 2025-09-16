@@ -5,7 +5,7 @@ Example 1:
 Input: haystack = "sadbutsad", needle = "sad"
 Output: 0 
 
-Example 2:
+Example 2: 
 Input: haystack = "leetcode", needle = "leeto"
 Output: -1
 
