@@ -7,7 +7,7 @@ Output: [["a","a","b"],["aa","b"]]
 
 Example 2:
 Input: s = "a"
-Output: [["a"]]
+Output: [["a"]] 
 
 Approach used : Backtracking 
 class Solution {
